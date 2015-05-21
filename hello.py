@@ -27,8 +27,11 @@ def hello():
 @app.route('/translate', methods=["GET", "POST"])
 def translate():
 	sourcelang = 'en'
-	string = str(request.form.get("string"))
-	items = linker.get_wiki_data(string, sourcelang)
+	string = str(request.args.get("string"))
+	if len(string) == 0:
+		items = None
+	else:
+		items = linker.get_wiki_data(string, sourcelang)
 
 	return render_template("index.html", items = items)
 
