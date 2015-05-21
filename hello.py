@@ -6,18 +6,6 @@ import linker
 app = Flask(__name__)
 
 
-# langcodes = {'en': 'English',
-# 		'es': 'Spanish',
-# 		'de': 'German',
-# 		'fr': 'French',
-# 		'it': 'Italian',
-# 		'ja': 'Japanese',
-# 		'ar': 'Arabic',
-# 		'ru': 'Russian',
-# 		'pt': 'Portuguese',
-# 		'zh': 'Chinese',															
-# 		}
-
 @app.route('/')
 def hello():
 

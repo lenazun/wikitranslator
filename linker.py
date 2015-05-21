@@ -2,12 +2,15 @@ import urllib
 import urllib2
 import simplejson
 
+
+
+
 def get_wiki_data(title, source_lang):
 	""" Gets wiki language data from the wikipedia API """
 
 
 	URL = 'http://' +  source_lang + '.wikipedia.org/w/api.php'
-	LANGS = ['ja', 'ru', 'es', 'ar', 'zh']
+	LANGS = ['ja', 'ru', 'es', 'ar', 'zh', 'de', 'nl', 'pt']
 
 	#creates a dictionary for the item 
 	item_dict = {}
@@ -91,7 +94,7 @@ def get_wiki_data(title, source_lang):
 def main():
 
 
-	print get_wiki_data("Barack Obama", "en")
+	#print get_wiki_data("Barack Obama", "en")
 	pass
 	
 if __name__ == "__main__":

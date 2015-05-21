@@ -25,10 +25,13 @@
 					    {% for key, value in value['equivalents'].iteritems() %}
 
 					<tbody>
+						{% if key %}
+
 						<tr>
 							<td>{{ key }}</td>
 							<td><a target="_blank" href="http://{{ key  }}.wikipedia.org/wiki/{{ value }}">{{ value }}</a></td>
 						</tr>
+						{%- endif %}
 
 					    {% endfor %}
 
