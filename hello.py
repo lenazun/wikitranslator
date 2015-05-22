@@ -15,7 +15,8 @@ def hello():
 @app.route('/translate', methods=["GET", "POST"])
 def translate():
 	sourcelang = 'en'
-	string = str(request.args.get("string"))
+	string = unicode(request.args.get("string"))
+	#string = string.encode('utf8')
 	if len(string) == 0:
 		items = None
 	else:
