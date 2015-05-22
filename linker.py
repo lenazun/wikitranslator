@@ -10,7 +10,7 @@ def get_wiki_data(title, source_lang):
 
 
 	URL = 'http://' +  source_lang + '.wikipedia.org/w/api.php'
-	LANGS = ['ja', 'ru', 'es', 'ar', 'zh', 'de', 'nl', 'pt']
+	LANGS = ['nl', 'es', 'fr', 'it', 'de', 'pl', 'ru', 'sv', 'vi', 'ko', 'fa', 'hi', 'id', 'pt', 'hu', 'ja']
 
 	#creates a dictionary for the item 
 	item_dict = {}
